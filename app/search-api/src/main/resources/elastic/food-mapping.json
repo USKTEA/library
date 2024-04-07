@@ -1,0 +1,16 @@
+{
+  "properties": {
+    "name": {
+      "type": "text",
+      "analyzer": "ngram_analyzer",
+      "search_analyzer": "nori_analyzer",
+      "index": "true"
+    },
+    "id": {
+      "type": "keyword"
+    },
+    "createdAt": {
+      "type": "date"
+    }
+  }
+}
