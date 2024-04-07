@@ -1,0 +1,54 @@
+{
+  "properties": {
+    "id": {
+      "type": "keyword"
+    },
+    "title": {
+      "type": "text",
+      "analyzer": "ngram_analyzer",
+      "search_analyzer": "nori_analyzer",
+      "index": "true"
+    },
+    "author": {
+      "type": "text",
+      "analyzer": "ngram_analyzer",
+      "search_analyzer": "nori_analyzer",
+      "index": "true"
+    },
+    "publisher": {
+      "type": "text",
+      "analyzer": "ngram_analyzer",
+      "search_analyzer": "nori_analyzer",
+      "index": "true"
+    },
+    "category": {
+      "type": "object",
+      "properties": {
+        "category1": {
+          "type": "text",
+          "analyzer": "ngram_analyzer",
+          "search_analyzer": "nori_analyzer",
+          "index": true
+        },
+        "category2": {
+          "type": "text",
+          "analyzer": "ngram_analyzer",
+          "search_analyzer": "nori_analyzer",
+          "index": true
+        }
+      }
+    },
+    "rate": {
+      "type": "float"
+    },
+    "publishedAt": {
+      "type": "date"
+    },
+    "createdAt": {
+      "type": "date"
+    },
+    "updatedAt": {
+      "type": "date"
+    }
+  }
+}
